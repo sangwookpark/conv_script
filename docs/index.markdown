@@ -112,6 +112,15 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+``` js
+<script type="text/javascript">
+var foo = function (bar) {
+  return bar++;
+};
+</script>
+```
+
+
 ``` html
 <script type="text/javascript">
 
@@ -148,6 +157,19 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
+| **Property항목** | **세부항목** | **Data Type** | **의미** | **예시** | **Script예제** |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성>하는 정보) | 주문번호: 20231220 | _conv.id: '20231220' |
+| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br/>  {  <br/>    id:'7786',  <br/>    name:'설화수 탄력크림',  <br/>    category:'화장품/스킨케어/크림',  <br/>    quantity:3,  <br/>    payAmount:90000,  <br/>    option: '용량:120',  <br/>  }<br/>] |
+| ^ | item.name | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화>수 탄력크림 | ^ |
+| ^ | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케>어/크림 | ^ |
+| ^ | item.quantity | number | 재화/용역의 수량 | 구매(결제)수량: 3개 | ^ |
+| ^ | item.payAmount | number | 재화/용역의 금액 (위 재화/용역 ID에 대한 총 결
+제금액. 단가 아님) | 결제금액: 90,000원 | ^ |
+| ^ | item.option | string | 재화/용역의 옵션 | 용량: 120ml | ^ |
+| items(#2) | (위 #1 내용 반복) | ... |  |  |  |
+| value |  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제
+금액: 50,000원 | _conv.value='50000' |
 
 ## Links
 
