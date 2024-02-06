@@ -1,10 +1,9 @@
 ---
 layout: base
-title: Github pages 테스트
+title: Github pages Eng test
 toc: true
 ---
 
-------
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
@@ -112,35 +111,6 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
-``` js
-<script type="text/javascript">
-var foo = function (bar) {
-  return bar++;
-};
-</script>
-```
-
-
-``` html
-<script type="text/javascript">
-
- if (window.wcs) {
-    // (2) 각 사이트별 식별자 설정
-    wcs_add["wa"] = "AccountId";
-
-    // (5) 결제완료 전환 이벤트 전송
-    var _conv = {}; // 이벤트 정보 담을 object 생성
-
-    _conv.type = 'purchase';  // object에 구매(purchase) 이벤트 세팅
-
-    _conv.items = ... // 구매(purchase) 이벤트에 대한 세부 내용(Property) 세팅
-
-    wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전송
-  }
-
-</script>
-```
-
 ## Tables
 
 | Option | Description |
@@ -157,15 +127,6 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-| **Property항목** | **세부항목** | **Data Type** | **의미** | **예시** | **Script예제** |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성>하는 정보) | 주문번호: 20231220 | _conv.id: '20231220' |
-| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:'7786',  <br>    name:'설화수 탄력크림',  <br>    category:'화장품/스킨케어/크림',  <br>    quantity:3,  <br>    payAmount:90000,  <br>    option: '용량:120',  <br>  }<br>] |
-| ^ | item.name | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화>수 탄력크림 | ^ |
-| ^ | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케>어/크림 | ^ |
-| items(#2) | (위 #1 내용 반복) | ... |  |  |  |
-| value |  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제
-금액: 50,000원 | _conv.value='50000' |
 
 ## Links
 
