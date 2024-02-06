@@ -18,8 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 컨버전스크립트가이드 테스트
-email: 
+title: 전환분석 스크립트 설치가이드
 description: >- # this means to ignore newlines until "baseurl:"
   컨버전스스크립트 설치 가이트 테스트
   적절함

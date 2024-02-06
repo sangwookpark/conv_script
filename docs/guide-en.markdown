@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Github pages Eng test
+title: wcs.trans script install guide
 toc: true
 ---
 

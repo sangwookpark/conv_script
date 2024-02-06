@@ -3,9 +3,7 @@ layout: base
 title: 전환분석 Script 설치가이드
 toc: true
 ---
-
 ------
-
 
 # 1. 개요
 ## 1.1. 본 문서의 대상 서비스 및 목적
@@ -40,31 +38,31 @@ Script의 개략의 구조는 다음과 같습니다.
 ```html
 // (1) wcslog.js import
 <script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
-
+ 
 <script type="text/javascript">
-
+ 
 if (window.wcs) {
-if(!wcs_add) var wcs_add = {};
-// (2) 각 사이트별 식별자 설정
-wcs_add["wa"] = "AccountId";      
-
-// (3) 광고 전환추적을 위한 cookie domain설정
-wcs.inflow("site-domain");
-
-// 아래 Script는 개별 이벤트 발생시 로그를 전송하기 위한 구역. 결제 완료 페이지이므로, PV 이벤트 와 결제완료 전환 이벤트를 전송함
-
-// (4) PV 이벤트 전송
-wcs_do(); // PV 이벤트 전송
-
-// (5) 결제완료 전환 이벤트 전송
-var _conv = {}; // 이벤트 정보를 담을 object 생성
-
-_conv.type = 'purchase';  // object에 구매(purchase) 이벤트 세팅
-
-_conv.items = ... // 구매(purchase) 이벤트에 대한 세부 내용(Property) 세팅
-
-wcs.trans(_conv); // 이벤트 정보를 담은 object를 서버에 전송
-}
+    if(!wcs_add) var wcs_add = {};
+    // (2) 각 사이트별 식별자 설정
+    wcs_add["wa"] = "AccountId";      
+ 
+    // (3) 광고 전환추적을 위한 cookie domain설정
+    wcs.inflow("site-domain");
+ 
+    // 아래 Script는 개별 이벤트 발생시 로그를 전송하기 위한 구역. 결제 완료 페이지이므로, PV 이벤트 와 결제완료 전환 이벤트를 전송함
+ 
+    // (4) PV 이벤트 전송
+    wcs_do(); // PV 이벤트 전송
+ 
+    // (5) 결제완료 전환 이벤트 전송
+    var _conv = {}; // 이벤트 정보를 담을 object 생성
+ 
+    _conv.type = 'purchase';  // object에 구매(purchase) 이벤트 세팅
+ 
+    _conv.items = ... // 구매(purchase) 이벤트에 대한 세부 내용(Property) 세팅
+ 
+    wcs.trans(_conv); // 이벤트 정보를 담은 object를 서버에 전송
+ }
 </script>
 ```
 
@@ -150,7 +148,7 @@ PV이벤트 와 전환이벤트를 함께 전송하는 경우(예: 구매완료 
 ### 2.4.1. 전환이벤트를 전송하는 Script의 모습
 전환이벤트 1개를 수집서버로 전송하는 Script의 전체 모습을 예시를 통해 보면 다음과 같습니다.
 
-```html
+```js
 // (5) 전환 이벤트 전송, (예) 결제완료 이벤트 전송
  
 var _conv = {}; // 전환 이벤트 정보 담을 object 생성
@@ -189,7 +187,7 @@ wcs.trans(_conv); // 전환 이벤트 정보를 담은 object를 서버에 전�
  - 그 외 전환이벤트 에서는, **전환이벤트코드**만 넣으시면 됩니다.
 
 구매(purchase)의 경우, 최소필수스펙 예시
-```html
+```js
 // (5) 전환이벤트 전송, (예) 결제완료 이벤트 전송
  
 var _conv = {}; // 전환이벤트 정보 담을 object 생성
@@ -202,7 +200,7 @@ wcs.trans(_conv); // 전환이벤트 정보를 담은 object를 서버에 전송
 ```
 
 구매(purchase) 외 다른 전환이벤트의 경우, 최소필수스펙 예시
-```html
+```js
 // (5) 전환이벤트 전송, (예) 신청완료 이벤트 전송
  
 var _conv = {}; // 전환이벤트 정보 담을 object 생성
