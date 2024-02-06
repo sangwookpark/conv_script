@@ -112,6 +112,14 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
+```html
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
 ``` js
 <script type="text/javascript">
 var foo = function (bar) {
