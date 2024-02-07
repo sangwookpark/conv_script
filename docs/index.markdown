@@ -1,6 +1,6 @@
 ---
 layout: base
-title: 전환분석 Script 설치가이드
+title: 전환분석 스크립트 설치가이드
 toc: true
 ---
 ------
