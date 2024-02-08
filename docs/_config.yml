@@ -21,7 +21,7 @@
 title: 네이버 프리미엄로그분석
 description: >- # this means to ignore newlines until "baseurl:"
   컨버전스스크립트 설치 가이트 테스트
-baseurl: "/conv_script/" # the subpath of your site, e.g. /blog
+baseurl: "/conv_script" # the subpath of your site, e.g. /blog
 url: "https://sangwookpark.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sangwookpark
 
