@@ -1,7 +1,6 @@
 ---
-layout: base
+layout: post
 title: Github pages 테스트
-toc: true
 ---
 
 ------
