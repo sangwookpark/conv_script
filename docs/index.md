@@ -1,3 +1,7 @@
-# GitHub Pages test
+---
+title: 네이버 프리미엄 로그분석
+layout: post
+---
 
-  깃허브 페이지 테스트 
+### 전환분석 스크립트 설치 가이드
+

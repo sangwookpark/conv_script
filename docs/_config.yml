@@ -18,35 +18,33 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 전환분석 스크립트 설치가이드
+title: 네이버 프리미엄로그분석
 description: >- # this means to ignore newlines until "baseurl:"
   컨버전스스크립트 설치 가이트 테스트
-  적절함
 baseurl: "/conv_script/" # the subpath of your site, e.g. /blog
 url: "https://sangwookpark.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sangwookpark
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: sighingnow/jekyll-gitbook
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+
+syntax_highlighter_style: github
+
+toc:
+  enabled: true
+  h_min: 1 # default: 1
+  h_max: 3 # default: 6
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
