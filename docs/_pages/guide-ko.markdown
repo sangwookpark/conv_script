@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Github pages 테스트
+title: 2. Github pages 테스트
 ---
 
 ------
