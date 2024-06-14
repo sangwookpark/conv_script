@@ -46,8 +46,8 @@ toc:
   h_max: 3 # default: 6
 collections:
   pages:
-    output: true
-    permalink: /:collection/:path/
     order:
       - script.md
       - guide-ko.md
+    output: true
+    permalink: /:collection/:path/
