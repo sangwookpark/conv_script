@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 2. Github pages 테스트
+date: 2024-01-02
 ---
 
 ------
