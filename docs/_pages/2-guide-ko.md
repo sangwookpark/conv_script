@@ -268,6 +268,8 @@ Term 2
   ~ Definition 2a
   ~ Definition 2b
 
+## image test
+- ![Image Alt 텍스트](/assets/img/image.png)
 
 ### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
 
