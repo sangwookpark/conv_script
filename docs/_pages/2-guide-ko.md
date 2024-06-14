@@ -184,6 +184,8 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
+![Image텍스트]({{"/assets/img/image.png"| relative_url}})
+
 ![Minion](https://octodex.github.com/images/minion.png)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
@@ -194,7 +196,6 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
 
 ## Plugins
 
@@ -267,11 +268,6 @@ Term 1
 Term 2
   ~ Definition 2a
   ~ Definition 2b
-
-## imagein
-
-image test
-- ![Image Alt 텍스트]({{"/assets/img/image.png"| relative_url}})
 
 ### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
 
