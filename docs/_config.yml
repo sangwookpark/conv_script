@@ -48,3 +48,6 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
+    order:
+      - 2-guide-ko.md
+      - 1-script.md
