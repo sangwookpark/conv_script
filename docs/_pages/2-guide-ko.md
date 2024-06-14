@@ -268,7 +268,7 @@ Term 2
   ~ Definition 2a
   ~ Definition 2b
 
-## image test
+## imagein
 - ![Image Alt 텍스트]({{"/assets/img/image.png"| relative_url}})
 
 ### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
