@@ -47,8 +47,6 @@ toc:
 
 collections:
   pages:
-    order:
-      - script.md
-      - guide-ko.md
+    sort_by: lesson
     output: true
     permalink: /:collection/:path/
