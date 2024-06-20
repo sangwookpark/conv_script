@@ -49,7 +49,7 @@ collections:
   guides:
     order:
       - test.md
-      - script.md
       - guide-ko.md
+      - script.md
     output: true
     permalink: /:collection/:path/
