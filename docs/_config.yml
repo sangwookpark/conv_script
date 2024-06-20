@@ -46,7 +46,7 @@ toc:
   h_max: 3 # default: 6
 
 collections:
-  pages:
+  guides:
     sort_by: lesson
     output: true
     permalink: /:collection/:path/
