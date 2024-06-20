@@ -1,7 +1,7 @@
 ---
 title: test page
-layout: post
-lesson: 1
+layout: default
+lesson: 2
 ---
 ------
 

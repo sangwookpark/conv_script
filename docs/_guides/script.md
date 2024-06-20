@@ -1,6 +1,6 @@
 ---
 title: 1. 전환분석 스크립트 설치가이드
-layout: post
+layout: default
 lesson: 3
 ---
 ------
