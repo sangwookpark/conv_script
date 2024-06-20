@@ -1,7 +1,7 @@
 ---
 title: 1. 전환분석 스크립트 설치가이드
 layout: default
-lesson: 3
+date: 2024-01-03
 ---
 ------
 
