@@ -1,6 +1,6 @@
 ---
 title: 1. 전환분석 스크립트 설치가이드
-layout: default
+layout: post
 date: 2024-01-03
 ---
 ------
