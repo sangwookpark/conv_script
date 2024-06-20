@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 2. Github pages 테스트
-lesson: 2
+date: 2024-01-02
 ---
 
 ------
