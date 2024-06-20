@@ -1,6 +1,6 @@
 ---
 title: test page
-layout: default
+layout: post
 date: 2024-01-01
 ---
 ------
