@@ -47,6 +47,9 @@ toc:
 
 collections:
   guides:
-    sort_by: lesson
+    order:
+      - test.md
+      - script.md
+      - guide-ko.md
     output: true
     permalink: /:collection/:path/
