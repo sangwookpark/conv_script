@@ -317,9 +317,9 @@ Script에 해당 전환이벤트 를 삽입할 경우, 한글 전환이벤트명
 
 | **Property항목** | **세부항목** | **Data Type** | **의미** | **예시** | **Script예제** |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id: \"20231220\" |
-| items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:'7786',  <br>    name:'설화수 탄력크림',  <br>    category:'화장품/스킨케어/크림',  <br>    quantity:3,  <br>    payAmount:90000,  <br>    option: '용량:120',  <br>  }<br>] |
-| ^ | item.name | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화수 탄력크림 |^ |
+| id |  | string | 해당 전환 이벤트의 이용자 행동 ID.<br> (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id: \"20231220\" |
+| items(#1) | item.id | string | 행동의 대상이 되는 <br> 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:'7786',  <br>    name:'설화수 탄력크림',  <br>    category:'화장품/스킨케어/크림',  <br>    quantity:3,  <br>    payAmount:90000,  <br>    option: '용량:120',  <br>  }<br>] |
+| ^ | item.name | string | 행동의 대상이 되는 <br> 재화/용역의 이름 | 상품명: 설화수 탄력크림 |^ |
 | ^ | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케어/크림 | ^ |
 | ^ | item.quantity | number | 재화/용역의 수량 | 구매(결제)수량: 3개 | ^ |
 | ^ | item.payAmount | number | 재화/용역의 금액 (위 재화/용역 ID에 대한 총 결제금액. 단가 아님) | 결제금액: 90,000원 | ^ |
