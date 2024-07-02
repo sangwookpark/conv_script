@@ -47,5 +47,6 @@ toc:
 
 collections:
   pages:
+    sort_by: lesson
     output: true
     permalink: /:collection/:path/
